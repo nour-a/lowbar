@@ -80,8 +80,18 @@ it('should return the last element', function(){
     it('is a function', function() {
       expect(_.each).to.be.a('function');
     });
+    it('should return an empty array if passed one argument that is an empty array', function(){
+    var actual = _.each([]);
+    var expected = [];
+    expect(actual).to.eqls(expected);
   });
-
+  it('should return the exact number when passed a number as only one argument', function(){
+    var actual = _.each(2);
+    var expected = 2;
+    expect(actual).to.equal(expected); 
+  });
+  //add a test to check the iteratee function using sinon(?)
+});
 
 describe('#indexOf', function () {
     it('is a function', function() {
@@ -128,17 +138,40 @@ it('should return index at which the val is found in the array', function(){
     expected = [1,2,3];
     expect(actual).to.eqls(expected);  
   });
-
-
+  it('should return the filtered elements based on the condition function', function(){
+    var actual = _.filter([1,2,3], function (num){if(num === 2){return num}});
+    var expected = [2];  
+    actual = _.filter(['a', 'b', 'a', 'c'], function (str){if(str === 'a'){ return str}});
+    expected = ['a', 'a'];
+    expect(actual).to.eqls(expected); 
   });
-  
-  
+});
 
+describe('#reject', function (){
+  it('is a function', function(){
+    expect(_.reject).to.be.a('function');
+  });
+   it('should return the rejected elements based on the condition function', function(){
+    var actual = _.reject([1,2,3], function (num){if(num === 2){return num}});
+    var expected = [1, 3];  
+    actual = _.reject(['a', 'b', 'a', 'c'], function (str){if(str === 'a'){ return str}});
+    expected = ['b', 'c'];
+    expect(actual).to.eqls(expected); 
+    actual = _.reject(1, function (str){if(str === 'a'){ return str}});
+    expected = [];
+    expect(actual).to.eqls(expected); 
+  }); 
+});
 
-
-
-
-  
-
+describe('#uniq', function (){
+  it('is a function', function(){
+    expect(_.uniq).to.be.a('function');
+  });
+  // it('should only return the unique elements of the array', function (){
+  //   var actual = _.uniq([1,2,1,3,1,4]);
+  //   var expected = [1,2,3,4];
+  //   expect(actual).to.eqls(expected); 
+  // });
+});
   
 });

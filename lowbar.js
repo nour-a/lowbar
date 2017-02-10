@@ -28,9 +28,12 @@ if(arguments.length === 1) {
 
 };
 
-_.each = function() {
+_.each = function(list, iteratee) {
 
-
+for(var i = 0; i < list.length; i++) {
+  iteratee(list[i]);
+}
+return list; 
 };
 
 _.indexOf = function(arr,val) {
@@ -45,22 +48,51 @@ _.indexOf = function(arr,val) {
   }
 };
 
-_.filter = function(list,condition) {
+_.filter = function(list, condition) {
+  var result = [];
+
   if(!arguments.length || typeof arguments[0]=== 'number'){
     return [];
   }
   if(arguments.length === 1){
     return list;
   }
-
-
+for(var i = 0; i < list.length; i++) {
+  if(condition(list[i]) === list[i]) {
+    result.push(list[i]);
+  }
+} 
+return result;
 };
 
+_.reject = function(list, condition) {
+  var result = [];
 
+  for(var i = 0; i < list.length; i++) {
+    if(condition(list[i]) !== list[i]) {
+      result.push(list[i]);
+    }
+  }
+return result; 
+}
 
+_.uniq = function (arr) {
+  var obj = {};
+  var result = [];
 
+  for(var i = 0; i < arr.length; i++) {
+    obj[arr[i]] = true; 
+  }
+
+  for(var key in obj) {
+    result.push(key);
+  } 
+  return result; 
+}
 
 
 if (typeof module !== 'undefined') {
   module.exports = _;
 }
+
+

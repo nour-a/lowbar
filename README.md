@@ -56,7 +56,7 @@ The Lowbar Sprint involves reimplementing a JS library as if you were its author
 12. contains
 13. every
 14. some
-15. extends
+15. extend
 16. defaults
 
 

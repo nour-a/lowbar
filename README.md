@@ -18,7 +18,7 @@ The functions are as follow:
 14. some
 15. extend
 16. defaults
-This project was completed using TDD (Test Driven Development) and Node.js and tested using Mocha/Chai.
+project was completed using TDD (Test Driven Development) and Node.js and tested using Mocha/Chai.
 
 ## Prerequisites
 

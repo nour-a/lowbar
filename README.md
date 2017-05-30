@@ -17,7 +17,8 @@ The functions are as follow:
 13. every
 14. some
 15. extend
-16. defaults
+16. 
+
 project was completed using TDD (Test Driven Development) and Node.js and tested using Mocha/Chai.
 
 ## Prerequisites

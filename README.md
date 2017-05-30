@@ -32,7 +32,7 @@ If you have it already on your computer you will get the version  (e.g. v7.7.4),
 
 Download this project or clone it please by using this command 
 ```
-`$ git clone https://github.com/northcoders/tech_test_tips.git`
+`$ git clone git@github.com:nour-a/lowbar.git`
 ```
 To go to the project folder
 ```

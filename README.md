@@ -31,17 +31,24 @@ If you have it already on your computer you will get the version  (e.g. v7.7.4),
 ## Installing
 
 Download this project or clone it please by using this command 
+```
 `$ git clone https://github.com/northcoders/tech_test_tips.git`
+```
 To go to the project folder
+```
 `$ cd lowbar`
-To install all the dependencies, use this command 
-`$ npm install`
+```
+To install all the dependencies, use this command
+```
+`$ npm install
+```
 
 ## Running the tests
 
 To run the test you can use the command
+```
 `$ npm test`
-
+```
 ## Testing frameworks used
 
 1. [The Mocha Test Framework](https://mochajs.org/)

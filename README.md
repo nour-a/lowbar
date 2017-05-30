@@ -23,7 +23,9 @@ This project was completed using TDD (Test Driven Development) and Node.js and t
 ## Prerequisites
 
 To run this project you need to have node.js on your computer, to check if you have it use this command in the terminal.
+```
 `$node -v`
+```
 If you have it already on your computer you will get the version  (e.g. v7.7.4), if not please use this link to install [node.js](https://nodejs.org/en/)
 
 ## Installing

@@ -39,4 +39,4 @@ $ npm test
 #Testing frameworks used
 1. The Mocha Test Framework
 2. The Chai Assertion Library
-3. Sinon and spies
+3. Sinon and spy

@@ -1,5 +1,6 @@
 # Lowbar
-This project has reimplementation for some of the Underscore.js which is a utility-belt library for JavaScript that provides support for the usual functional suspects without extending any core JavaScript objects.
+
+This project has reimplementation for some of the [underscore](http://underscorejs.org/) which is a utility-belt library for JavaScript that provides support for the usual functional suspects without extending any core JavaScript objects.
 The functions are as follow:
 1. identity
 2. first
@@ -19,24 +20,28 @@ The functions are as follow:
 16. defaults
 This project was completed using TDD (Test Driven Development) and Node.js and tested using Mocha/Chai.
 
-##Prerequisites
+## Prerequisites
+
 To run this project you need to have node.js on your computer, to check if you have it use this command in the terminal.
-$node -v
-If you have it already on your computer you will get the version  (e.g. v7.7.4), if not please use this link to install it. https://nodejs.org/en/
+`$node -v`
+If you have it already on your computer you will get the version  (e.g. v7.7.4), if not please use this link to install [node.js](https://nodejs.org/en/)
 
-##Installing
+## Installing
+
 Download this project or clone it please by using this command 
-$ git clone https://github.com/northcoders/tech_test_tips.git
+`$ git clone https://github.com/northcoders/tech_test_tips.git`
 To go to the project folder
-$ cd lowbar
+`$ cd lowbar`
 To install all the dependencies, use this command 
-$ npm install
+`$ npm install`
 
-##Running the tests
+## Running the tests
+
 To run the test you can use the command
-$ npm test
+`$ npm test`
 
-##Testing frameworks used
-1. The Mocha Test Framework
-2. The Chai Assertion Library
-3. Sinon and spy
+## Testing frameworks used
+
+1. [The Mocha Test Framework](https://mochajs.org/)
+2. [The Chai Assertion Library](http://chaijs.com/)
+3. [Sinon - spy](http://sinonjs.org/)
